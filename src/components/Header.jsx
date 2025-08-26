@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-const links = ['Features', 'Team', 'Signin'];
+const links = ['Features', 'Team', 'Signup'];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
     <header
       ref={headerRef}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-[#0c1524] py-5' : 'bg-transparent pt-[60px]'
+        scrolled ? 'bg-[#0c1524] py-5' : 'bg-transparent pt-3'
       }`}
     >
       <div className='container flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row'>
